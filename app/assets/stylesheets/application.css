@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background: url(http://cdn.traileraddict.com/img/bg_pattern.jpg) top repeat-x #000;
+}
+
+ .navbar-fixed-top {
+  background-color: #404447;
+ }
+
+.container-fluid {
+  float: none;
+}
+
+.navbar-inverse .navbar-brand {
+  font-size: 230%;
+}
+
+.main {
+  height: 800px;
+  margin-left: 12.5%;
+  margin-right: 10%;
+  margin-top: 75px;
+}
+
+.popular {
+  float: right;
+  height: 700px;
+  padding-top: 20px;
+  background: linear-gradient(#1B1B1B, black);
+  margin-top: 20px;
+}
