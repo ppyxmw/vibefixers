@@ -44,3 +44,31 @@ body {
   background: linear-gradient(#1B1B1B, black);
   margin-top: 20px;
 }
+
+label {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+#erro_explanation li{
+  color: white;
+}
+
+.fan {
+  margin-left: -26px;
+}
+
+.artist {
+  margin-left: -35px;
+}
+
+.field {
+  color: grey;
+}
