@@ -20,6 +20,8 @@ body {
 
  .navbar-fixed-top {
   background-color: #404447;
+  padding-top: 5px;
+  padding-bottom: 5px;
  }
 
 .container-fluid {
@@ -72,3 +74,4 @@ li {
 .field {
   color: grey;
 }
+
