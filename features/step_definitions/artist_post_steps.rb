@@ -11,19 +11,19 @@ Given(/^I am a signed in Artist$/) do
 end
 
 Given(/^I have no posts$/) do
-  expect(@user.posts.count).to eq(0)
+  expect(Post.count).to eq(0)
 end
 
 Given(/^I go to create a Post$/) do
   click_link 'Post'
-  expect(page).to have_content('Sample')
+  expect(page).to have_content('Create a new post')
 end
 
 When(/^I fill in all Post details$/) do
   @post = FactoryGirl.build(:post)
-  fill_in 'Sample', with: @post.sample
+  fill_in 'search', with: "mike"
   click_button 'Search'
-  # select '...'
+  fill_in 'Title', with: @post.title
   fill_in 'Tags', with: @post.tags
   fill_in 'Summary', with: @post.summary
   fill_in 'Description', with: @post.description
@@ -31,5 +31,5 @@ When(/^I fill in all Post details$/) do
 end
 
 Then(/^my Post is created$/) do
-  expect(@user.posts.count).to eq(1)
+  expect(Post.count).to eq(1)
 end

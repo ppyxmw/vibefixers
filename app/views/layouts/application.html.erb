@@ -3,10 +3,9 @@
   <head>
     <title>Vibefixers</title>
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
-    <script src="http://connect.soundcloud.com/sdk.js"></script>
-    <script src="sc.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -21,6 +20,11 @@
             <li>
             <a href="#"><%= current_user.username %></a>
             </li>
+            <% if current_user.artist %>
+              <li>
+                <%= link_to 'Post', new_post_path %>
+              </li>
+            <% end %>
             <li>
               <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete' %>
             </li>
@@ -44,10 +48,6 @@
     <main class="main col-md-9">
 
       <div class="content col-md-8">
-
-        <input type='text' id="search" onchange='doRender()' />
-        <div id='catalog'></div>
-
         <%= yield %>
       </div>
 

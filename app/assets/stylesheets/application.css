@@ -75,22 +75,19 @@ li {
   color: grey;
 }
 
-
-
-
 .heading {
   font-size: 40px;
   font-weight: bolder;
 }
 
 .img {
-  height: 100px;
-  width: 100px;
+  height: 116px;
+  width: 116px;
 }
 
 .img:hover {
-  height: 120px;
-  width: 120px;
+  height: 125px;
+  width: 125px;
   border: 5px solid red;
 }
 

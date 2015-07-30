@@ -4,8 +4,7 @@ Feature: User signs up
   So I can access my personal settings
 
     Scenario: Successful sign in
-    Given I am signed up
-    And I am not signed in
-    When I sign in with my email address
-    Then I am shown my account
-
+      Given I am signed up
+      And I am not signed in
+      When I sign in with my email address
+      Then I am shown my account

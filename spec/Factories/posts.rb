@@ -1,10 +1,10 @@
 FactoryGirl.define do
   factory :post do
-    title "MyString"
-    tags "MyString"
+    title "This is my title"
+    tags "A couple of tags"
     user nil
-    summary "MyString"
-    description "MyText"
-    artwork "MyString"
+    summary "I will summarise"
+    description "Let me describe this for you"
+    artwork "www.photo2324.com"
   end
 end
